@@ -8,6 +8,50 @@ namespace Course
         static void Main(string[] args)
         {
             //-------------------------------------------------------------------------------------------------
+            //AULA DE CONVERSÃO IMPLÍCITA E CASTING
+            Console.WriteLine("-------------------------------------------------------------------------------------------------");
+            Console.WriteLine("AULA DE CONVERSÃO IMPLÍCITA E CASTING");
+            Console.WriteLine("");
+            Console.WriteLine("Implícita:");
+            //Converção implicita
+            float x1 = 4.5f;
+
+            double y = x1;
+
+            Console.WriteLine(y);
+            //--------------------
+            //Converção em casting
+            Console.WriteLine("Casting - double para float:");
+            double a1;
+            float b1;
+
+            a1 = 5.1;
+            b1 = (float)a1;
+            Console.WriteLine(b1);
+
+            //--------------------
+            //Converção em casting
+            Console.WriteLine("Casting double para int:");
+            double a2;
+            int b2;
+
+            a2 = 5.1;
+            b2 = (int)a2;
+
+            Console.WriteLine(b2);
+
+            //--------------------
+            //Converção em casting
+            Console.WriteLine("Casting int para double:");
+
+            int a3 = 5;
+            int b3 = 2;
+
+            double resultado = (double) a3 / b3;
+
+            Console.WriteLine(resultado);
+
+            //-------------------------------------------------------------------------------------------------
             //AULA DE OPERADORES DE ATRIBUICOES
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
             Console.WriteLine("AULA DE OPERADORES DE ATRIBUICAO");
