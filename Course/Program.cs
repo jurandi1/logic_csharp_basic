@@ -8,6 +8,39 @@ namespace Course
         static void Main(string[] args)
         {
             //-------------------------------------------------------------------------------------------------
+            //AULA DE SAÍDA DE DADOS C#
+            Console.WriteLine("-------------------------------------------------------------------------------------------------");
+            Console.WriteLine("AULA DE SAÍDA DE DADOS C#");
+            Console.WriteLine("");
+
+            char genero = '\u004D';
+
+            int idade = 22;
+            double saldo = 3000.90;
+            string nome = "Junior";
+
+            //PLACEHOLDERS
+            Console.WriteLine("{0} tem {1} anos e tem o saldo igual a {2:F2} reais.", nome, idade, saldo);
+            //INTERPOLAÇÃO
+            Console.WriteLine($"{nome} tem {idade} anos e tem o saldo igual a {saldo:F2} reais.");
+            //CONCATENAÇÃO DE STRINGS
+            Console.WriteLine(nome + " tem " + idade + " anos e tem o saldo igual a " + saldo.ToString("F2", CultureInfo.InvariantCulture) + " reais.");
+
+            Console.WriteLine("AULA DE SAÍDA DE DADOS C#");
+
+            Console.Write("Bom dia!");
+            Console.WriteLine("Boa tarde! :)");
+            Console.WriteLine("Boa noite!");
+            Console.WriteLine("----------------------");
+            Console.WriteLine(genero);
+            Console.WriteLine(idade);
+            Console.WriteLine(saldo);
+            Console.WriteLine(nome);
+            Console.WriteLine(saldo.ToString("F2"));
+            Console.WriteLine(saldo.ToString("F4"));
+            Console.WriteLine(saldo.ToString("F4", CultureInfo.InvariantCulture));
+
+            //-------------------------------------------------------------------------------------------------
             // AULA DE TIPOS DE DADOS EM C# - VARIAVEIS VALORES NUMÉRICOS
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
             Console.WriteLine("AULA DE TIPOS DE DADOS EM C# - VARIAVEIS VALORES NUMÉRICOS");
@@ -27,7 +60,7 @@ namespace Course
             Console.WriteLine("");
 
             bool completo = false;
-            char genero = 'F';
+            genero = 'F';
             char letra = '\u004D';
             byte n1 = 126;
             int n2 = 1000;
@@ -35,7 +68,7 @@ namespace Course
             long n4 = 2147483648L;
             float n5 = 4.5F;
             double n6 = 4.5;
-            string nome = "Junior Green";
+            nome = "Junior Green";
             object obj1 = "Alex Brown";
             object obj2 = 4.5F;
 
