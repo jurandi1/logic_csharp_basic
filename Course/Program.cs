@@ -8,6 +8,68 @@ namespace Course
         static void Main(string[] args)
         {
             //-------------------------------------------------------------------------------------------------
+            //AULA DE ENTRADA DE DADOS EM C#
+            Console.WriteLine("-------------------------------------------------------------------------------------------------");
+            Console.WriteLine("AULA DE ENTRADA DE DADOS EM C#");
+            Console.WriteLine("");
+
+            Console.WriteLine("P1 - Digite 4 informações para teste:");
+            //---------------------------
+            string frase = Console.ReadLine();
+            string s1 = Console.ReadLine();
+            string s2 = Console.ReadLine();
+            string s3 = Console.ReadLine();
+
+            Console.WriteLine("Digite 3 nomes com espaço para armazenamento em vetor exemplo (AMARELO LARANJA PRETO):");
+            string[] vet = Console.ReadLine().Split(' ');
+            string p1 = vet[0];
+            string p2 = vet[1];
+            string p3 = vet[2];
+
+            Console.WriteLine("Você digitou: ");
+            Console.WriteLine(frase);
+            Console.WriteLine(s1);
+            Console.WriteLine(s2);
+            Console.WriteLine(s3);
+            Console.WriteLine(p1);
+            Console.WriteLine(p2);
+            Console.WriteLine(p3);
+            //----------------------------------------
+            Console.WriteLine("P2 - Lendo diferentes tipos de variáveis:");
+            //string x6;
+            int y6;
+            double z6;
+            char w6;
+
+            //x6 = Console.ReadLine();
+            Console.Write("Digite um número inteiro: ");
+            y6 = int.Parse(Console.ReadLine());
+            Console.Write("Digite um carácter: ");
+            w6 = char.Parse(Console.ReadLine());
+            Console.Write("Digite um double: ");
+            z6 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Console.Write("Digite nome, sexo, idade e altura. Exemplo:(Junior M 22 1.76): ");
+            string[] vet2 = Console.ReadLine().Split(' ');
+            string nome2 = vet2[0];
+            char sexo2 = char.Parse(vet2[1]);
+            int idade2 = int.Parse(vet2[2]);
+            double altura2 = double.Parse(vet2[3], CultureInfo.InvariantCulture);
+
+            Console.WriteLine("Você digitou:");
+            //Console.WriteLine(x6);
+            Console.WriteLine(y6);
+            Console.WriteLine(w6);
+            Console.WriteLine(z6.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine(nome2);
+            Console.WriteLine(sexo2);
+            Console.WriteLine(idade2);
+            Console.WriteLine(altura2.ToString("F2", CultureInfo.InvariantCulture));
+
+            Console.ReadLine();
+
+
+            //-------------------------------------------------------------------------------------------------
             //AULA DE OPERAÇÕES ARITIMÉTICAS
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
             Console.WriteLine("AULA DE OPERAÇÕES ARITIMÉTICAS");
@@ -26,7 +88,7 @@ namespace Course
             Console.WriteLine("Calculando bascará:");
             double a5 = 1.0, b5 = -3.0, c5 = -4.0;
 
-            double delta = Math.Pow(b5,2) - 4.0 * a5 * c5;
+            double delta = Math.Pow(b5, 2) - 4.0 * a5 * c5;
 
             double x2 = (-b5 + Math.Sqrt(delta)) / (2.0 * a5);
             double x3 = (-b5 - Math.Sqrt(delta)) / (2.0 * a5);
@@ -75,7 +137,7 @@ namespace Course
             int a3 = 5;
             int b3 = 2;
 
-            double resultado = (double) a3 / b3;
+            double resultado = (double)a3 / b3;
 
             Console.WriteLine(resultado);
 
