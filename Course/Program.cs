@@ -8,6 +8,34 @@ namespace Course
         static void Main(string[] args)
         {
             //-------------------------------------------------------------------------------------------------
+            //AULA DE OPERAÇÕES ARITIMÉTICAS
+            Console.WriteLine("-------------------------------------------------------------------------------------------------");
+            Console.WriteLine("AULA DE OPERAÇÕES ARITIMÉTICAS");
+            Console.WriteLine("");
+
+            int op = 3 + 4 * 2;
+            int op2 = (3 + 4) * 2;
+            int op3 = 17 % 3;
+            double op4 = 10.0 / 8.0;
+
+            Console.WriteLine("3 + 4 * 2 = " + op);
+            Console.WriteLine("(3 + 4) * 2 = " + op2);
+            Console.WriteLine("17 % 3 = " + op3);
+            Console.WriteLine("10 / 8 = " + op4);
+            //-------------------------------------
+            Console.WriteLine("Calculando bascará:");
+            double a5 = 1.0, b5 = -3.0, c5 = -4.0;
+
+            double delta = Math.Pow(b5,2) - 4.0 * a5 * c5;
+
+            double x2 = (-b5 + Math.Sqrt(delta)) / (2.0 * a5);
+            double x3 = (-b5 - Math.Sqrt(delta)) / (2.0 * a5);
+
+            Console.WriteLine("Delta: " + delta);
+            Console.WriteLine("Resultado + = " + x2);
+            Console.WriteLine("Resultado - = " + x3);
+
+            //-------------------------------------------------------------------------------------------------
             //AULA DE CONVERSÃO IMPLÍCITA E CASTING
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
             Console.WriteLine("AULA DE CONVERSÃO IMPLÍCITA E CASTING");
