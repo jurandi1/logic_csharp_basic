@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Globalization;
 
 namespace Course
@@ -8,25 +9,76 @@ namespace Course
         static void Main(string[] args)
         {
             //-------------------------------------------------------------------------------------------------
-            //AULA OPERADORES LÓGICOS EM C#
+            //AULA ESTRUTURA CONDICIONAL(IF - ELSE) EM C#
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
-            Console.WriteLine("AULA OPERADORES LÓGICOS EM C#");
+            Console.WriteLine("AULA ESTRUTURA CONDICIONAL(IF - ELSE) EM C#");
             Console.WriteLine("");
 
-            bool c1 = 2 > 3 && 4 != 5;
-            bool c2 = 2 > 3 || 4 != 5;
-            bool c3 = !(2 > 3) &&  4 != 5;
+            Console.WriteLine("Condição simples:");
+            Console.WriteLine("");
+            int x = 10;
 
-            Console.WriteLine(c1);
-            Console.WriteLine(c2);
-            Console.WriteLine(c3);
-            Console.WriteLine("-------------------------");
+            Console.WriteLine("bom dia");
 
-            bool c4 = 10 < 5;
-            bool c5 = c2 || c2 && c3;
+            if (x > 5)
+            {
+                Console.WriteLine("boa tarde");
+            }
 
-            Console.WriteLine(c4);
-            Console.WriteLine(c5);
+            Console.WriteLine("boa noite");
+            Console.WriteLine("");
+            Console.WriteLine("--------------------");
+            Console.WriteLine("Condição Composta:");
+            Console.WriteLine("--------------------");
+            Console.WriteLine("");
+            Console.WriteLine("Digite um numero inteiro:");
+            int x1 = int.Parse(Console.ReadLine());
+
+            if (x1 % 2 == 0)
+            {
+                Console.WriteLine("Par!");
+            } else
+            {
+                Console.WriteLine("Impar");
+            }
+            Console.WriteLine("");
+            Console.WriteLine("--------------------");
+            Console.WriteLine("Encadeamentos:");
+            Console.WriteLine("--------------------");
+            Console.WriteLine("");
+            Console.WriteLine("Qual a hora atual?");
+            int hora = int.Parse(Console.ReadLine());
+
+            if (hora < 12)
+            {
+                Console.WriteLine("Bom dia!");
+            }else if (hora < 18)
+            {
+                Console.WriteLine("Boa tarde!");
+            }else
+            {
+                Console.WriteLine("Boa noite!");
+            }
+            //-------------------------------------------------------------------------------------------------
+            //AULA OPERADORES LÓGICOS EM C#
+            //Console.WriteLine("-------------------------------------------------------------------------------------------------");
+            //Console.WriteLine("AULA OPERADORES LÓGICOS EM C#");
+            //Console.WriteLine("");
+
+            //bool c1 = 2 > 3 && 4 != 5;
+            //bool c2 = 2 > 3 || 4 != 5;
+            //bool c3 = !(2 > 3) &&  4 != 5;
+
+            //Console.WriteLine(c1);
+            //Console.WriteLine(c2);
+            //Console.WriteLine(c3);
+            //Console.WriteLine("-------------------------");
+
+            //bool c4 = 10 < 5;
+            //bool c5 = c2 || c2 && c3;
+
+            //Console.WriteLine(c4);
+            //Console.WriteLine(c5);
 
             //-------------------------------------------------------------------------------------------------
             //AULA OPERADORES COMPARATIVOS EM C#
