@@ -9,56 +9,69 @@ namespace Course
         static void Main(string[] args)
         {
             //-------------------------------------------------------------------------------------------------
-            //AULA ESTRUTURA CONDICIONAL(IF - ELSE) EM C#
+            //AULA ESCOPO EM C#
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
-            Console.WriteLine("AULA ESTRUTURA CONDICIONAL(IF - ELSE) EM C#");
+            Console.WriteLine("AULA ESCOPO EM C#");
             Console.WriteLine("");
+            int a; //ERRO VARIAVEL NÃO INICIADA
+            double preco = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Condição simples:");
-            Console.WriteLine("");
-            int x = 10;
-
-            Console.WriteLine("bom dia");
-
-            if (x > 5)
+            if (preco > 0)
             {
-                Console.WriteLine("boa tarde");
+                double desconto = preco * 0.1;
             }
+            Console.WriteLine(desconto); //ERRO VARIAVEL FORA DO ESCOPO
+            //-------------------------------------------------------------------------------------------------
+            //AULA ESTRUTURA CONDICIONAL(IF - ELSE) EM C#
+            //Console.WriteLine("-------------------------------------------------------------------------------------------------");
+            //Console.WriteLine("AULA ESTRUTURA CONDICIONAL(IF - ELSE) EM C#");
+            //Console.WriteLine("");
 
-            Console.WriteLine("boa noite");
-            Console.WriteLine("");
-            Console.WriteLine("--------------------");
-            Console.WriteLine("Condição Composta:");
-            Console.WriteLine("--------------------");
-            Console.WriteLine("");
-            Console.WriteLine("Digite um numero inteiro:");
-            int x1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Condição simples:");
+            //Console.WriteLine("");
+            //int x = 10;
 
-            if (x1 % 2 == 0)
-            {
-                Console.WriteLine("Par!");
-            } else
-            {
-                Console.WriteLine("Impar");
-            }
-            Console.WriteLine("");
-            Console.WriteLine("--------------------");
-            Console.WriteLine("Encadeamentos:");
-            Console.WriteLine("--------------------");
-            Console.WriteLine("");
-            Console.WriteLine("Qual a hora atual?");
-            int hora = int.Parse(Console.ReadLine());
+            //Console.WriteLine("bom dia");
 
-            if (hora < 12)
-            {
-                Console.WriteLine("Bom dia!");
-            }else if (hora < 18)
-            {
-                Console.WriteLine("Boa tarde!");
-            }else
-            {
-                Console.WriteLine("Boa noite!");
-            }
+            //if (x > 5)
+            //{
+            //    Console.WriteLine("boa tarde");
+            //}
+
+            //Console.WriteLine("boa noite");
+            //Console.WriteLine("");
+            //Console.WriteLine("--------------------");
+            //Console.WriteLine("Condição Composta:");
+            //Console.WriteLine("--------------------");
+            //Console.WriteLine("");
+            //Console.WriteLine("Digite um numero inteiro:");
+            //int x1 = int.Parse(Console.ReadLine());
+
+            //if (x1 % 2 == 0)
+            //{
+            //    Console.WriteLine("Par!");
+            //} else
+            //{
+            //    Console.WriteLine("Impar");
+            //}
+            //Console.WriteLine("");
+            //Console.WriteLine("--------------------");
+            //Console.WriteLine("Encadeamentos:");
+            //Console.WriteLine("--------------------");
+            //Console.WriteLine("");
+            //Console.WriteLine("Qual a hora atual?");
+            //int hora = int.Parse(Console.ReadLine());
+
+            //if (hora < 12)
+            //{
+            //    Console.WriteLine("Bom dia!");
+            //}else if (hora < 18)
+            //{
+            //    Console.WriteLine("Boa tarde!");
+            //}else
+            //{
+            //    Console.WriteLine("Boa noite!");
+            //}
             //-------------------------------------------------------------------------------------------------
             //AULA OPERADORES LÓGICOS EM C#
             //Console.WriteLine("-------------------------------------------------------------------------------------------------");
