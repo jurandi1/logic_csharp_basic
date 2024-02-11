@@ -9,31 +9,51 @@ namespace Course
         static void Main(string[] args)
         {
             //-------------------------------------------------------------------------------------------------
-            //AULA FUNÇÕES EM C#
+            //AULA ESTRUTURA REPETITIVA ENQUANTO (WHILE) EM C#
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
-            Console.WriteLine("AULA FUNÇÕES EM C#");
+            Console.WriteLine("AULA ESTRUTURA REPETITIVA ENQUANTO (WHILE) EM C#");
             Console.WriteLine("");
-            Console.WriteLine("Digite três números: ");
-            int n1 = int.Parse(Console.ReadLine());
-            int n2 = int.Parse(Console.ReadLine());
-            int n3 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite um número: ");
+            double x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            while (x >= 0.0)
+            {
+                double raiz = Math.Sqrt(x);
+                Console.WriteLine(raiz.ToString("F3", CultureInfo.InvariantCulture));
+                Console.WriteLine("Digite outro número: ");
 
-            //if (n1 > n2 && n1 > n3)
-            //{
-            //    Console.WriteLine("Maior = " + n1);
-            //}
-            //else if (n2 > n3)
-            //{
-            //    Console.WriteLine("Maior = " + n2);
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Maior = " + n3);
-            //}
+                x= double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); 
+            }
+            Console.WriteLine("Número negativo!");
 
-            double resultado = Maior(n1, n2, n3);
 
-            Console.WriteLine("Maior = " + resultado);
+
+
+            //-------------------------------------------------------------------------------------------------
+            //AULA FUNÇÕES EM C#
+            //Console.WriteLine("-------------------------------------------------------------------------------------------------");
+            //Console.WriteLine("AULA FUNÇÕES EM C#");
+            //Console.WriteLine("");
+            //Console.WriteLine("Digite três números: ");
+            //int n1 = int.Parse(Console.ReadLine());
+            //int n2 = int.Parse(Console.ReadLine());
+            //int n3 = int.Parse(Console.ReadLine());
+
+            ////if (n1 > n2 && n1 > n3)
+            ////{
+            ////    Console.WriteLine("Maior = " + n1);
+            ////}
+            ////else if (n2 > n3)
+            ////{
+            ////    Console.WriteLine("Maior = " + n2);
+            ////}
+            ////else
+            ////{
+            ////    Console.WriteLine("Maior = " + n3);
+            ////}
+
+            //double resultado = Maior(n1, n2, n3);
+
+            //Console.WriteLine("Maior = " + resultado);
             //-------------------------------------------------------------------------------------------------
             //AULA ESCOPO EM C#
             //Console.WriteLine("-------------------------------------------------------------------------------------------------");
