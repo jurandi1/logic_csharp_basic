@@ -9,21 +9,39 @@ namespace Course
         static void Main(string[] args)
         {
             //-------------------------------------------------------------------------------------------------
-            //AULA ESTRUTURA REPETITIVA ENQUANTO (WHILE) EM C#
+            //AULA ESTRUTURA REPETITIVA PARA (FOR) EM C#
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
-            Console.WriteLine("AULA ESTRUTURA REPETITIVA ENQUANTO (WHILE) EM C#");
+            Console.WriteLine("AULA ESTRUTURA REPETITIVA PARA (FOR) EM C#");
             Console.WriteLine("");
-            Console.WriteLine("Digite um número: ");
-            double x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            while (x >= 0.0)
-            {
-                double raiz = Math.Sqrt(x);
-                Console.WriteLine(raiz.ToString("F3", CultureInfo.InvariantCulture));
-                Console.WriteLine("Digite outro número: ");
 
-                x= double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); 
+            Console.Write("Quantos números inteiros vocÊ vai digitar? ");
+            int n = int.Parse(Console.ReadLine());
+
+            int soma = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                Console.Write("Valor #{0}: ", i);
+                int Valor = int.Parse(Console.ReadLine());
+                soma += Valor;
             }
-            Console.WriteLine("Número negativo!");
+            Console.Write("Soma = " + soma);
+
+            //-------------------------------------------------------------------------------------------------
+            //AULA ESTRUTURA REPETITIVA ENQUANTO (WHILE) EM C#
+            //Console.WriteLine("-------------------------------------------------------------------------------------------------");
+            //Console.WriteLine("AULA ESTRUTURA REPETITIVA ENQUANTO (WHILE) EM C#");
+            //Console.WriteLine("");
+            //Console.WriteLine("Digite um número: ");
+            //double x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //while (x >= 0.0)
+            //{
+            //    double raiz = Math.Sqrt(x);
+            //    Console.WriteLine(raiz.ToString("F3", CultureInfo.InvariantCulture));
+            //    Console.WriteLine("Digite outro número: ");
+
+            //    x= double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); 
+            //}
+            //Console.WriteLine("Número negativo!");
 
 
 
