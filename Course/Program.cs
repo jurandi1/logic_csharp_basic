@@ -9,18 +9,44 @@ namespace Course
         static void Main(string[] args)
         {
             //-------------------------------------------------------------------------------------------------
-            //AULA ESCOPO EM C#
+            //AULA FUNÇÕES EM C#
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
-            Console.WriteLine("AULA ESCOPO EM C#");
+            Console.WriteLine("AULA FUNÇÕES EM C#");
             Console.WriteLine("");
-            int a; //ERRO VARIAVEL NÃO INICIADA
-            double preco = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite três números: ");
+            int n1 = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
+            int n3 = int.Parse(Console.ReadLine());
 
-            if (preco > 0)
-            {
-                double desconto = preco * 0.1;
-            }
-            Console.WriteLine(desconto); //ERRO VARIAVEL FORA DO ESCOPO
+            //if (n1 > n2 && n1 > n3)
+            //{
+            //    Console.WriteLine("Maior = " + n1);
+            //}
+            //else if (n2 > n3)
+            //{
+            //    Console.WriteLine("Maior = " + n2);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Maior = " + n3);
+            //}
+
+            double resultado = Maior(n1, n2, n3);
+
+            Console.WriteLine("Maior = " + resultado);
+            //-------------------------------------------------------------------------------------------------
+            //AULA ESCOPO EM C#
+            //Console.WriteLine("-------------------------------------------------------------------------------------------------");
+            //Console.WriteLine("AULA ESCOPO EM C#");
+            //Console.WriteLine("");
+            //int a; //ERRO VARIAVEL NÃO INICIADA
+            //double preco = double.Parse(Console.ReadLine());
+
+            //if (preco > 0)
+            //{
+            //    double desconto = preco * 0.1;
+            //}
+            //Console.WriteLine(desconto); //ERRO VARIAVEL FORA DO ESCOPO
             //-------------------------------------------------------------------------------------------------
             //AULA ESTRUTURA CONDICIONAL(IF - ELSE) EM C#
             //Console.WriteLine("-------------------------------------------------------------------------------------------------");
@@ -361,6 +387,22 @@ namespace Course
             //sbyte x = 100;
 
             //Console.WriteLine(x);
+        }
+
+        static int Maior(int a, int b, int c)
+        {
+            int m;
+            if(a > b && a > c)
+            {
+                m = a;
+            }else if(b > c) 
+            {
+                m = b;
+            }else
+            {
+                m = c;
+            }
+            return m;
         }
     }
 }
